@@ -16,5 +16,13 @@ data = ['1','2',3, 'akash g krishnan']
 
 new_human.print_the_Data(data)
 
+USER = {"first_name":"Akash",
+"age" :12, "fathers_name": "Gopala Krishnan",
+"mother_name": "Thankamony g krishnan"
+}
+print("_"*20)
+print(USER["first_name"])
+
+
 
 
