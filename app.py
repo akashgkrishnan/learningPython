@@ -1,4 +1,4 @@
-from practice import human
+from practice import Human
 from random import choice
 
 def getUserInput():
@@ -8,6 +8,13 @@ def getUserInput():
     return name,age,gender 
 
 nam,ag,gend = getUserInput()
-new_human = human(nam,ag,gend)
+new_human = Human(nam,ag,gend)
 
-print(new_human.total_human())
+print(f"The total number of active users we have is: {Human.no_of_humans}")
+
+data = ['1','2',3, 'akash g krishnan']
+
+new_human.print_the_Data(data)
+
+
+
