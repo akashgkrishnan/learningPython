@@ -11,6 +11,8 @@ def reverseInParentheses(inputString):
             while inputString_list[j] != ')':
                 rev_str.append(inputString_list[j])
                 j += 1
+                
+                
 
             i = j + 1
             rev_str.reverse()
