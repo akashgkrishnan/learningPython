@@ -4,7 +4,7 @@ def isIPv4Address(inputString):
     if len(inputString) == 4:
         for i in range(len(inputString)):#len(inputString) == 4:
             if inputString[i].isnumeric(): 
-                if int(inputString[i]) > 256 or inputString[i] == '' or inputString[i].isalpha():
+                if int(inputString[i]) >= 256 or inputString[i] == '' or inputString[i].isalpha():
                     return False
                 else:
                     count += 1
