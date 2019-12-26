@@ -11,18 +11,7 @@ def arithmeticExpression(a, b, c):
             if a *b ==c:
                 return True
         else:
-            print(a/b)
-            print(float(c))
             if (a/b) == float(c):
-
                 return True
-
-
-
-
-
-
-a=8
-b=2
-c=4
-print(arithmeticExpression(a, b, c))
+            else:
+                return False
