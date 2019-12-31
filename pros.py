@@ -1,4 +1,6 @@
-
+def pref(pros,prefs):
+    for i
+    
 
     
 
@@ -7,8 +9,12 @@ pros = ["Jack",  "Leon",  "Maria"]
 preference = [["Computer repair","Handyman","House cleaning"], 
  ["Computer lessons","Computer repair","Data recovery service"], 
  ["Computer lessons","House cleaning"]]
-for i,v in enumerate(preference):
-     print(f"i: {i} v: {v}")
+
+print(pref(pros,preference))
+
+
+
+
 
 '''
  [[["Computer lessons"],["Leon","Maria"]], 
