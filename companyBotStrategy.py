@@ -4,10 +4,10 @@ def companyBotStrategy(trainingData):
     for i in range(len(trainingData)):
         if trainingData[i][1] == 1:
             count += 1
-            data += trainingData[i][0]
+            tot += trainingData[i][0]
 
     if count:
-        return data/count
+        return tot/count
     else:
         return 0.0
     
