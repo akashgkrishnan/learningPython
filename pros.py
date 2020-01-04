@@ -1,5 +1,5 @@
 def pref(pros,prefs):
-    for i
+    for 
     
 
     
@@ -11,9 +11,6 @@ preference = [["Computer repair","Handyman","House cleaning"],
  ["Computer lessons","House cleaning"]]
 
 print(pref(pros,preference))
-
-
-
 
 
 '''
