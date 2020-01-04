@@ -1,8 +1,14 @@
 def willYou(young, beautiful, loved):
-    if( young and  beautiful and loved):
-        return False
+    if loved:
+        if young and beautiful:
+            return False
+        else:
+            return True
     else:
-        return True
+        if young and beautiful:
+            return True
+        else:
+            return False
     
 
 
