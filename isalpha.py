@@ -1,2 +1,2 @@
-a ='171a'
+a ='171'
 print(a.isnumeric())
