@@ -1,11 +1,9 @@
 def sumInRange(nums, queries):
     new_list = []
     for i in queries:
-        print(nums[i[0]:i[1]+1])
-        #new_list.append(sum(nums[i[0]:i[1]+1]))
-    return sum(new_list)
-        
-
+        new_list.append(sum(nums[i[0]:i[1]+1]))
+    return sum(new_list) % (10**9 + 7)
+#adding some comments to check the working of the github repos
 
 
 
