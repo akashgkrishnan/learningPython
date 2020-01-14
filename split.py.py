@@ -1,2 +1,0 @@
-u = input("enter username: ")
-
