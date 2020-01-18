@@ -1,0 +1,7 @@
+my name is akash 
+i am a beginner in python 
+i am learnign file handling 
+
+my name is akash  3 
+i am a beginner in python 3 
+i am learnign file handling 3 
