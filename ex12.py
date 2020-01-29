@@ -16,3 +16,14 @@ def partition(lis, fn):
 
 print(partition([1,2,3,4], is_even))
 
+'''
+    def partition(l, callback):
+        return [[l.pop(l.index(i)) for i in l if callback(i)],l]
+
+
+
+     def partition(lst, fn):
+        return [[val for val in lst if fn(val)], [val for val in lst if not fn(val)]]
+
+'''
+
