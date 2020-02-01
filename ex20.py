@@ -5,6 +5,6 @@ def truncate(phrase, num):
     elif num > len(phrase):
         return phrase
     else:
-        return phrase[:length] + '...'    
+        return phrase[:length] + '...'
 
 print(truncate("Problem solving is the best!", 10))
