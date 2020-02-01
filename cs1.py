@@ -13,6 +13,7 @@ def marathonTaskScore(marathonLength, maxScore, submissions, successfulSubmissio
     
 
 
+#adding some comments to understand commit and branching and branches in git
 
 
 
