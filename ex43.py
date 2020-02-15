@@ -1,0 +1,7 @@
+file = open('textfile.txt', 'r')
+data = file.read()
+print("No of characters : ", len(data))
+file.seek(0)
+print("No lines are ", len(file.readlines()))
+print("No of words are", len(data.split()))
+file.close()

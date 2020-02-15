@@ -1,0 +1,7 @@
+f1 = open('/home/akash/Desktop/hi.jpg', 'rb')
+f2 = open('/home/akash/Desktop/hi2.jpg', 'wb')
+data = f1.read()
+f2.write(data)
+f2.write("AKASH G KRISHNAN".encode())
+f1.close()
+f2.close()
