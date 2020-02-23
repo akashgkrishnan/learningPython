@@ -1,0 +1,6 @@
+commonly used python driver for mysql
+-> mysqlconnector
+-> pymysql
+-> mysqlclient
+-> mysqldb
+etc

@@ -14,10 +14,9 @@
 # from module_name import function_name
 # from module import func1 as a, func2 as b
 # a() b()
-# from module _name import * - > loads every def in the module
+# from module _name import * - > loads every def in the modul
+import ducats
 
-from arith import add as a, mul as b
+print(ducats.arith.add(10,20))
 
-print(a(5,6))
-print(b(30,30))
 
