@@ -8,6 +8,7 @@ def addBorder(picture):
     len_val = len(picture[0])
     picture.insert(0,"*"*(len_val))
     picture.append("*"*(len_val))
+    print("hi")
 
     return picture
 
