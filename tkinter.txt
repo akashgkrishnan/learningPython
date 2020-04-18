@@ -1,0 +1,145 @@
+tkinter:
+--------
+>it is one of the gui library to create desktop based
+gui application using python.
+
+>this lib was the part of tcl language with name Tk
+
+>python borrowed it from tcl and renamed Tkinter
+
+>in python 3,it was again renamed tkinter
+
+Widget:
+-------
+>a graphical component that has visible interface and
+rectangular in shape.
+
+>in coding,each widget is represented by object.
+
+>Container Widgets:
+	>Top Level(Tk)
+	>Child Level(Frame)
+>Basic Widgets:
+	Label,Entry,Text,Button,Combobox(drop down),etc.
+
+Layout Manager:
+	>pack(side,anchor,padx,pady,ipadx,ipady,fill)
+		side:left,right,top(default),bottom
+		anchor:e,w,n,s,ne,se,nw,sw,center(default)
+		fill=X,Y,BOTH
+
+	>place(x,y,relx,rely,width,height,relwidth,relheight)
+
+	>grid(row,column,padx,pady,ipadx,ipady,sticky)
+		here sticky=anchor
+
+How to get width & height of widget:
+====================================
+widget.update()
+w=widget.winfo_width()
+h=widget.winfo_height()
+
+
+Event Handling:
+==============
+ Event:
+	>change of state of an object is called event
+ 	
+	or
+
+	>Any user interaction with any widget ,called event
+
+Event Handling:
+	>executing logic on an event,called event handling.
+
+Types of Event:
+---------------
+<Button>
+<Button-1>
+<Button-2>
+<Button-3>
+
+	>Above events are generated whenever a mouse
+button is clicked on any widget.
+
+<Motion>
+
+	>Whenever mouse is moved over any widget
+
+<Enter>
+
+	>Whenever mouse is entered to a widget
+
+<Leave>
+
+	>Whenever mouse is exited from a widget
+etc.
+
+How to Handle Event:
+--------------------
+>first identify type of event
+>call bind() on the widget
+	widget.bind('<EventType>',callback)
+
+Note:here callback represents a function or method
+
+format of callback:
+	def callback(event):
+		logic
+
+
+Note:
+Button widget also provides command arg to pass this
+callback.
+
+b=Button(....,command=callback)
+
+Note:in this case callback function does not take event
+arg.
+
+
+messagebox:
+===========
+>messagebox.showinfo(title=None, message=None)
+>messagebox.showwarning(title=None, message=None)
+>messagebox.showerror(title=None, message=None)
+
+>messagebox.askquestion(title=None,message=None)
+>messagebox.askokcancel(title=None, message=None)
+>messagebox.askretrycancel(title=None, message=None)
+>messagebox.askyesno(title=None, message=None)
+>messagebox.askyesnocancel(title=None, message=None)
+
+filedialog:
+===========
+>filedialog.askopenfile()
+>filedialog.askopenfiles()
+>filedialog.askopenfilename()
+>filedialog.askopenfilenames()
+>filedialog.askdirectory()
+>filedialog.asksaveasfile()
+
+simpledialog
+============
+>simpledialog.askstring()
+
+ScrolledText:
+=============
+	Text+Scrollbar
+
+st=scrolledtext.ScrolledText(parent,width,height)
+st.insert(END,'msg')
+st.delete('1.0',END)	
+
+
+How to create drop-down list:
+------------------------------
+from tkinter import ttk
+comboExample = ttk.Combobox(app, 
+                            values=[
+                                    "January", 
+                                    "February",
+                                    "March",
+                                    "April"])
+comboExample.current(1)
+comboExample.get()
